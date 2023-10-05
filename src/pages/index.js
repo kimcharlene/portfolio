@@ -6,13 +6,13 @@ import ProjectCard from '../components/project-card.js'
 import Seo from '../components/seo'
 
 // Step 2: Define your component
-const TeachingPage = ({ data }) => {
+const DesignPage = ({ data }) => {
   return (
     <main>
       <Layout pageTitle="Design">
         {
           data.allMdx.nodes.map(node => (
-            <ProjectCard title={node.frontmatter.title} description={node.frontmatter.description} image={node.frontmatter.image.childImageSharp.gatsbyImageData}/>
+            <ProjectCard title={node.frontmatter.title} description={node.frontmatter.description} image={node.frontmatter.image.childImageSharp.gatsbyImageData} />
           ))
         }
       </Layout>
@@ -39,7 +39,7 @@ export const query = graphql`
   }
 `
 
-export const Head = () => <Seo title="Design"/>
+export const Head = () => <Seo title="Design" />
 
 // Step 3: Export your component
 export default TeachingPage
