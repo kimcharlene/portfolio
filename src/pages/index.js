@@ -42,4 +42,4 @@ export const query = graphql`
 export const Head = () => <Seo title="Design" />
 
 // Step 3: Export your component
-export default TeachingPage
+export default DesignPage
