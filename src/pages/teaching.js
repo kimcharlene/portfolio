@@ -7,7 +7,7 @@ const TeachingPage = () => {
   return (
     <main>
       <Layout pageTitle="Teaching">
-        <p>This is the Teaching page, that will showcase education projects.</p>
+      <p>This is the Teaching page, that will showcase education projects.</p>
       </Layout>
     </main>
   )

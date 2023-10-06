@@ -1,0 +1,17 @@
+.heading {
+	font-weight: lighter;
+	margin-bottom: 3px;
+}
+
+.caption {
+	margin: 0;
+}
+
+.info-card {
+	width: 30%;
+	float: right;
+}
+
+.info-links {
+	text-align: right;
+}
