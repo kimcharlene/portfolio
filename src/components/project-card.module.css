@@ -1,0 +1,14 @@
+.heading {
+	font-weight: lighter;
+	margin: 0;
+}
+
+.project-text {
+	margin-left: 25px;
+	width: 50%;
+}
+.project-card {
+	width: 65%;
+	display: flex;
+	padding-bottom: 20px;
+}

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
     container,
     heading,
@@ -10,6 +10,16 @@ import {
 import InfoCard from './info-card.js'
 
 const Layout = ({ pageTitle, children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <div className={container}>
       <nav>
@@ -27,7 +37,7 @@ const Layout = ({ pageTitle, children }) => {
       </nav>
       <InfoCard></InfoCard>
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
+        <h2 className={heading}>{pageTitle}</h2>
         {children}
       </main>
     </div>
